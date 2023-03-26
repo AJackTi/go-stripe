@@ -58,7 +58,7 @@ func main() {
 
 	flag.Parse()
 
-	infoLog := log.New(os.Stdout, "INTO\t", log.Ldate|log.Ltime)
+	infoLog := log.New(os.Stdout, "INFO\t", log.Ldate|log.Ltime)
 	errorLog := log.New(os.Stdout, "ERROR\t", log.Ldate|log.Ltime|log.Lshortfile)
 
 	tc := make(map[string]*template.Template)
