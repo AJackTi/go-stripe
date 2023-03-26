@@ -24,7 +24,7 @@ type templateData struct {
 
 var functions = template.FuncMap{}
 
-// go.embed templates
+//go:embed templates/*
 var templateFS embed.FS
 
 func (app *application) addDefaultData(td *templateData, r *http.Request) *templateData {
